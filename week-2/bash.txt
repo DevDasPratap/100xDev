@@ -1,0 +1,73 @@
+pwd
+cd
+cd ..
+cd ../..
+ls
+ls newdir
+ls -l
+ls -l newdir
+ls -R newdir
+ls -t newdir
+ls -lt newdir
+ls -la (find hidden file)
+ls -lR | grep .json (pull all json file)
+ls -s newdir
+ls p**
+ls ..
+
+mkdir
+mkdir -p frontend/html
+mkdir -p frontend/css
+mkdir -p frontend/image
+
+touch
+cat
+touch filename.txt
+cat > filename.txt
+cat filename.txt
+cat >> filename.txt
+
+vi: i, :wq!
+mv: current where to
+mv style.css css .css (move and file name change)
+
+rm filename.txt
+rm -r folder
+
+chmod -R wgo-rwx (who permission -R for folder, - revoke + added rwx: read write execute) 
+
+echo 'Hello World'
+
+tail filename.txt
+head filename.txt
+head -10 filename.txt
+tail -n +25 filename.txt | head
+
+wc filename.txt
+
+grep "one" filename.txt
+grep "one" filename.txt | wc
+grep "one" filename.txt | wc -l
+grep -c "one" filename.txt
+grep -h "one" filename.txt
+grep -hi "one" filename.txt
+grep -hin "one" filename.txt
+grep -hinw  "one" filename.txt
+
+cat log.txt
+grep "ERROR" log.txt
+grep -v "INFO" log.txt
+grep "INFO" log.txt
+grep -A "INFO" log.txt
+grep -B ERROR log.txt
+
+sed -ibackup 's/ERROR/CRITICAL/' log.txt
+
+awk
+
+nvm
+npx
+npm
+node
+git
+
