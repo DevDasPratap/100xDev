@@ -16,6 +16,48 @@
   Once you've implemented the logic, test your code by running
 */
 
-class Calculator {}
+class Calculator {
+  constructor(){  
+      this.result = 0;
+    }
+    add(a){
+      this.result += a;
+    }
+    subtract(a){
+        this.result -= a;
+    }
+    multiply(a){
+        this.result *= a;
+    }
+    divide(a){
+        if(this.result / a === Infinity){
+          throw new Error("Division not possible")  
+        }
+        else{
+          this.result = this.result / a;
+        }
+    }
+    clear(){
+      return this.result=0;
+    }
+    getResult(){
+      return this.result;
+    }
+    calculate(exp) {
+      const tempExp = exp.replace(/\s/g, "");
+  
+      const result = eval(tempExp);
+      try {
+        if (isNaN(result) || !isFinite(result)) {
+          throw new Error("INFINITE");
+        }
+        else {
+          this.result = result;
+        }
+      } catch (error) {
+        throw new Error();
+      }
+    }
+}
 
 module.exports = Calculator;
