@@ -64,10 +64,10 @@ grep -B ERROR log.txt
 sed -ibackup 's/ERROR/CRITICAL/' log.txt
 
 awk
-
 nvm
 npx
 npm
 node
 git
-
+man ls : to check ls documention
+top: check current running task
