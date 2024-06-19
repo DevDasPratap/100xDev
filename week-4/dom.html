@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let timeout;
+        function debouncePopulate(){
+            clearTimeout(timeout)
+            timeout = setTimeout(()=>{
+                sumCaculate()
+            }, 100)
+        }
+        async function sumCaculate() {
+            const firstInput = document.getElementById('firstNumber').value
+            const secondInput = document.getElementById('secondNumber').value
+            const element = document.getElementById('finalsum')
+
+            // without backend
+            // element.innerHTML = Number(firstInput) + Number(secondInput)
+            // with backend
+            const res = await fetch(`https://sum-server.100xdevs.com/sum?a=${firstInput}&b=${secondInput}`)
+            const ans = await res.text()
+            // console.log(ans)
+            element.innerHTML = ans
+        }
+    </script>
+</head>
+<body>
+    <input oninput="debouncePopulate()" type="number" id="firstNumber" placeholder="Enter first number">
+    <input oninput="debouncePopulate()" type="number" id="secondNumber" placeholder="Enter second number">
+    <!-- <button onclick="sumCaculate()">Calculate Sum</button> -->
+    <p id="finalsum" ></p>
+</body>
+</html>
