@@ -5,16 +5,27 @@
   Once you've implemented the logic, test your code by running
 */
 
+// function countVowels(str) {
+//   // Your code here
+//   let count = 0
+//   const res = str.toLowerCase().split('')
+//   for (let i = 0; i < res.length; i++) {
+//     if (res[i] === 'a' || res[i] === 'e' || res[i] === 'i' || res[i] === 'o' || res[i] === 'u') {
+//       count += 1
+//     }
+//   }
+//   return count
+// }
+
 function countVowels(str) {
-  // Your code here
-  let count = 0
-  const res = str.toLowerCase().split('')
-  for (let i = 0; i < res.length; i++) {
-    if (res[i] === 'a' || res[i] === 'e' || res[i] === 'i' || res[i] === 'o' || res[i] === 'u') {
-      count += 1
-    }
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+      if (vowels.includes(str[i].toLowerCase())) {
+          count++;
+      }
   }
-  return count
+  return count;
 }
 
 module.exports = countVowels;

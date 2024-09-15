@@ -28,24 +28,31 @@
 // }
 // isPalindrome('madam')
 
-function isPalindrome(str) {
-  str = str.toLowerCase()
-  let filteredStr = ''
-  for (const char of str) {
-    if ((char >= 'a' && char <= 'z') || (char >= '0' && char <= '9')) {
-      filteredStr += char;
-    }
-  }
+// function isPalindrome(str) {
+//   str = str.toLowerCase()
+//   let filteredStr = ''
+//   for (const char of str) {
+//     if ((char >= 'a' && char <= 'z') || (char >= '0' && char <= '9')) {
+//       filteredStr += char;
+//     }
+//   }
 
-  if (filteredStr.length < 2) {
-    return true
-  }
-  let reveredStr = ''
-  for (let i = filteredStr.length - 1; i >= 0; i--) {
-    reveredStr += filteredStr[i]
-  }
-  return filteredStr === reveredStr
+//   if (filteredStr.length < 2) {
+//     return true
+//   }
+//   let reveredStr = ''
+//   for (let i = filteredStr.length - 1; i >= 0; i--) {
+//     reveredStr += filteredStr[i]
+//   }
+//   return filteredStr === reveredStr
+// }
+// isPalindrome('madam')
+
+function isPalindrome(str) {
+  const lowercaseStr = str.toLowerCase();
+  const filteredStr = lowercaseStr.split('').filter((char) => (char !== '?' && char !== ' ' && char !== '!' && char !== '.' && char !== ',')).join('');
+  const reversedStr = filteredStr.split('').reverse().join('');
+  return filteredStr === reversedStr;
 }
-isPalindrome('madam')
 
 module.exports = isPalindrome;
