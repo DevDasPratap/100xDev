@@ -1,7 +1,7 @@
 // backend/routes/user.js
 const express = require('express');
 
-const userRouter = express.userRouter();
+const userRouter = express.Router();
 const zod = require("zod");
 const jwt = require("jsonwebtoken");
 const { User, Account } = require('../db');
