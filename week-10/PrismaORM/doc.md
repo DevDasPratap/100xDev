@@ -111,8 +111,8 @@ async  function  insertUser(email:  string, name:  string, password:  string){
 console.log(res);
 }
 
-insertUser("chandan@gmail.com",  "Chandan",  "12345");
-// insertUser("chandan2@gmail.com",  "Chandan2",  "12345");
+insertUser("Pratap@gmail.com",  "Pratap",  "12345");
+// insertUser("Pratap2@gmail.com",  "Pratap2",  "12345");
 
 ```
 
