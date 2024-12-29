@@ -1,3 +1,10 @@
-This is 100xDev Repo
+## Topics addressed in the Cohort's Curriculum
 
-repo: https://github.com/100xdevs-cohort-2/assignments.git
+1. **MERN STACK**
+2. **DEVOPS BASICS**
+3. **OPEN SOURCE (GSOC)**
+4. **PORTFOLIO PROJECTS**
+5. **SYSTEM DESIGN**
+6. **ADVANCED BACKEND**
+7. **ADVANCED DEVOPS**
+8. **OPEN SOURCE(REAL COMPANIES)**
