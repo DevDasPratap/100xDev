@@ -1,4 +1,4 @@
-# Serveless FNS
+# Serveless FNS (Functions)
 
 As a developer, you're likely well-versed in building frontend applications using technologies like HTML, CSS, JavaScript, and frameworks such as React. Deploying these frontend apps is relatively straightforward with platforms like Vercel or Netlify. However, when it comes to deploying backend servers, it can feel like trying to navigate through a maze blindfolded.
 
