@@ -1,6 +1,10 @@
 ### Recorded Classes
 12.1 -> Deploying Frontends to AWS, Object stores(S3) & CDNs(Cloudfront) work, uploading to S3, serving from Cloudfront, Connecting Domain to Cloudfront CDN ✅
 
+run dist file
+npm i -g serve
+then run: goto dist folder then type: serve
+
 12.2 -> Advanced Ts Apis, Peak, Partial, Readonly, Record, Exclude, Type Inference in zod ✅
 
      -> Cohort 1 - Deploying npm packages, Intro to Monorepos ✅

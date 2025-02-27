@@ -11,3 +11,5 @@ function sum(a:number, b:number) {
     return a+b
 }
 sum(1,9)
+
+// tsc -b // for compile
