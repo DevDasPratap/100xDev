@@ -19,6 +19,8 @@ mkdir type-app
 cd type-app
 npm init -y
 npx tsc --init
+# or
+tsc --init
 ```
 
 These commands create a new directory (`type-app`), initialize a Node.js project with default settings (`npm init -y`), and then generate a `tsconfig.json` file using `npx tsc --init`.
@@ -200,6 +202,11 @@ Write a TypeScript function named `greet` that takes a user's first name as an a
 **Function Signature:**
 
 ```tsx
+// implicitly retun nothing 
+function greet(firstName: string) {
+    // Implementation goes here
+}
+// explicitly define return void
 function greet(firstName: string): void {
     // Implementation goes here
 }
