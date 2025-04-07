@@ -96,7 +96,7 @@ You're on the right track for connecting to your new EC2 instance and setting up
 1. **Give ssh key permissions (chmod 400 is recommended):**
 
    ```bash
-   chmod 400 kirat-class.pem
+   chmod 400 pd-vm.pem
    ```
 
    * This makes the key **readable only by you**, enhancing security.
@@ -104,7 +104,7 @@ You're on the right track for connecting to your new EC2 instance and setting up
 2. **ssh into machine:**
 
    ```bash
-   ssh -i kirat-class.pem ubuntu@ec2-65-0-180-32.ap-south-1.compute.amazonaws.com
+   ssh -i pd-vm.pem ubuntu@ec2-65-0-180-32.ap-south-1.compute.amazonaws.com
    ```
 
    * **Important:** The default username for Amazon Linux 2 AMIs is 'ec2-user'. Adapt if using a different OS image.
