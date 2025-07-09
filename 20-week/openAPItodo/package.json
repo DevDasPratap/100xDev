@@ -1,0 +1,24 @@
+{
+  "name": "openapitodo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "tsoa:routes": "tsoa routes",
+  "tsoa:spec": "tsoa spec",
+  "build": "tsc",
+  "start": "node build/app.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "tsoa": "^6.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.10",
+    "typescript": "^5.8.3"
+  }
+}
