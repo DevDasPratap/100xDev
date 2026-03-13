@@ -304,3 +304,11 @@ The above is just the establishment of the connection. Now, the media has to be 
 ---
 
 Slides [here](https://projects.100xdevs.com/tracks/webrtc-1/WebRTC-Basic-implementation--advance-discussion-1).
+
+WebRTC [here] (https://peerjs.com/)
+
+WebRTC For The Curious [here] (https://webrtcforthecurious.com/)
+
+WebRTC Local [here] (chrome://webrtc-internals/)
+
+WebRTC sample [here] (https://webrtc.github.io/samples/)
